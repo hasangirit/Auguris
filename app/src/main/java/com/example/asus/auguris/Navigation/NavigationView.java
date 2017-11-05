@@ -283,8 +283,9 @@ public class NavigationView extends AppCompatActivity implements OnMapReadyCallb
             return;
         }
 
-        mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0,
+        mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0,
                 0, mLocationListener);
+        
 
 
     }
